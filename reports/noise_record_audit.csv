@@ -1,0 +1,4 @@
+Record,Shape,Sampling_Frequency,Channels,Units,Duration_Seconds,NaN_Count,Inf_Count
+BW,"(650000, 2)",360,"noise1, noise2","mV, mV",1805.5555555555557,0,0
+MA,"(650000, 2)",360,"noise1, noise2","mV, mV",1805.5555555555557,0,0
+EM,"(650000, 2)",360,"noise1, noise2","mV, mV",1805.5555555555557,0,0

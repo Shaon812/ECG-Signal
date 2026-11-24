@@ -1,0 +1,4 @@
+Split,Total_Beats,Beat_Length,NaN_Count,Infinite_Count
+Train,59720,288,0,0
+Validation,19530,288,0,0
+Test,22156,288,0,0

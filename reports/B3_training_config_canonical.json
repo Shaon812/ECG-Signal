@@ -1,0 +1,97 @@
+{
+  "config_version": "B3-canonical-v1",
+  "generated": "2026-11-22",
+  "project": "ECG_QPAIN_2027",
+  "experiment": "B3 - ResNet + CAM Consistency",
+  "note": "Canonical machine-readable configuration. It supersedes the stale batch_size=32 field in reports/B3_B4_experiment_config.json, which is RETAINED UNCHANGED as the historical record. No research methodology was changed.",
+  "historical_config_retained": "reports/B3_B4_experiment_config.json (unmodified)",
+  "random_seed": 2027,
+  "seed_usage": {
+    "python_random": 2027,
+    "numpy_global": 2027,
+    "tensorflow_global": 2027,
+    "tf_data_shuffle_op_seed": 2027,
+    "tf_data_shuffle_buffer": 10000,
+    "noise_generator_np_default_rng": 2027,
+    "patient_split_search": 2027
+  },
+  "batch_size": 128,
+  "learning_rate": 0.0001,
+  "lambda_cam": 0.1,
+  "class_weights": [
+    0.281067,
+    7.632924,
+    3.533728,
+    35.547619
+  ],
+  "class_weights_full_precision": [
+    0.28106703815960393,
+    7.632924335378323,
+    3.5337278106508876,
+    35.54761904761905
+  ],
+  "class_weights_note": "sklearn compute_class_weight(class_weight='balanced') on y_train; 6-decimal values above are rounded copies",
+  "class_mapping": {
+    "N": 0,
+    "S": 1,
+    "V": 2,
+    "F": 3
+  },
+  "bandpass_filter": {
+    "lowcut_hz": 0.5,
+    "highcut_hz": 40.0,
+    "order": 4
+  },
+  "beat_window": {
+    "before_r_samples": 126,
+    "after_r_samples": 162,
+    "length_samples": 288,
+    "sampling_frequency_hz": 360
+  },
+  "noise_seed": 2027,
+  "noise_types": [
+    "BW",
+    "MA"
+  ],
+  "noise_channel": 0,
+  "noise_snr_db_validation": [
+    18,
+    12,
+    6
+  ],
+  "noise_snr_db_training": [
+    24,
+    18,
+    12,
+    6
+  ],
+  "noise_split_ranges_samples": {
+    "train": [
+      0,
+      390000
+    ],
+    "validation": [
+      390000,
+      520000
+    ],
+    "test": [
+      520000,
+      650000
+    ]
+  },
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": 0.0001,
+    "state_restored": false,
+    "note": "Fresh Adam at iteration 0. Keras checkpoints contain no compile_config/optimizer state; this is a weight-only warm start."
+  },
+  "planned_epochs": 10,
+  "completed_epochs_at_audit": 5,
+  "test_data_used_for_training": false,
+  "source_references": [
+    "notebook 03 cells 11/14/15 (filter, class mapping, beat window)",
+    "notebook 02 cell 22 (AAMI symbol mapping)",
+    "notebook 07 cells 20/34/65/67/88/135/175/179 (noise, seeds, weights, batching)",
+    "train_b3_epoch6.py (batch 128, fresh Adam, threshold)"
+  ]
+}

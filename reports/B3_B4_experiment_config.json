@@ -1,0 +1,19 @@
+{
+    "project": "ECG_QPAIN_2027",
+    "B3": "ResNet + CAM Consistency",
+    "B4": "ResNet + Noise Severity Gated CAM Consistency",
+    "learning_rate": 0.0001,
+    "lambda_cam": 0.1,
+    "epochs_B3": 10,
+    "epochs_B4": 10,
+    "batch_size": 32,
+    "severity_gate": "(24-SNR)/18",
+    "training_SNRs": [
+        24,
+        18,
+        12,
+        6
+    ],
+    "initial_weights": "B2 trained weights",
+    "test_data_used_for_training": false
+}

@@ -1,0 +1,31 @@
+# GPU (Linux / Colab) pinned top-level dependencies for B3 Epoch 6.
+# Versions are taken from the locally verified requirements.lock.txt where the
+# package is platform-independent. DO NOT use requirements.lock.txt directly on
+# Linux: it was generated on Windows and contains Windows-only entries
+# (e.g. pywinpty), so transitive resolution on Linux may differ.
+# Generated: 2026-11-22
+
+tensorflow==2.21.0
+keras==3.15.1
+absl-py==2.5.1
+protobuf==7.36.2
+
+numpy==2.5.5
+pandas==3.1.1
+scipy==1.18.1
+scikit-learn==1.9.1
+matplotlib==3.11.2
+seaborn==0.13.2
+wfdb==4.3.1
+tqdm==4.70.1
+
+ipykernel==7.4.0
+ipython==9.18.1
+jupyter==1.1.1
+notebook==7.6.5
+
+# TensorFlow GPU support on Linux installs bundled CUDA/cuDNN libraries:
+#   python -m pip install 'tensorflow[and-cuda]'
+# On managed Colab GPU runtimes this is normally preconfigured; the versions
+# above are the ones verified locally on Windows (CPU). A GPU run must record
+# its own resolved package versions in the final report.

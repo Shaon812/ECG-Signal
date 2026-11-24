@@ -1,0 +1,5 @@
+Condition,True_Class,checkpoint_sha256,config_version,Pred_N,Pred_S,Pred_V,Pred_F
+clean,N,c9a23746518a2ec99daa8290a3ee8e2d20df6a66ac69eb4d23c2c1f7e99b9214,B3-canonical-v1,9839,5405,749,1540
+clean,S,c9a23746518a2ec99daa8290a3ee8e2d20df6a66ac69eb4d23c2c1f7e99b9214,B3-canonical-v1,358,93,2,9
+clean,V,c9a23746518a2ec99daa8290a3ee8e2d20df6a66ac69eb4d23c2c1f7e99b9214,B3-canonical-v1,5,27,1157,329
+clean,F,c9a23746518a2ec99daa8290a3ee8e2d20df6a66ac69eb4d23c2c1f7e99b9214,B3-canonical-v1,4,4,7,2

@@ -1,0 +1,4 @@
+Split,Patient_Groups,Total_Beats,N,S,V,F,Percentage
+Train,29,59743,53141,1956,4225,421,58.89
+Validation,9,19540,17542,462,1519,17,19.26
+Test,9,22168,19948,363,1492,365,21.85

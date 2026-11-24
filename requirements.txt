@@ -1,0 +1,26 @@
+# ECG_QPAIN_2027 - runtime dependencies
+# Install once from the project root:  python -m pip install -r requirements.txt
+#
+# Note: TensorFlow wheels generally require Python 3.10-3.12 on Windows.
+# The notebooks were authored in Colab; use a venv/conda env with a compatible
+# Python version for notebooks 05-07. Notebook 00 also imports torch (optional).
+
+# Core data / science stack
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+seaborn
+tqdm
+wfdb
+
+# Deep learning (clean baselines, noise-augmented and CAM-consistency models)
+tensorflow>=2.13
+
+# Notebook / VS Code execution
+ipykernel
+jupyter
+
+# Optional (only used by the smoke-test notebook 00)
+# torch

@@ -1,0 +1,5 @@
+Condition,True_Class,Pred_N,Pred_S,Pred_V,Pred_F
+clean,N,10555,4074,601,2303
+clean,S,376,72,0,14
+clean,V,9,8,964,537
+clean,F,7,1,7,2

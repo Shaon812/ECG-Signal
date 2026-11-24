@@ -1,0 +1,57 @@
+{
+    "sampling_frequency": 360,
+    "beat_length": 288,
+    "train_snrs": [
+        24,
+        18,
+        12,
+        6
+    ],
+    "validation_snrs": [
+        18,
+        12,
+        6
+    ],
+    "test_seen_snrs": [
+        24,
+        18,
+        12,
+        6,
+        0
+    ],
+    "test_unseen_snrs": [
+        18,
+        12,
+        6,
+        0
+    ],
+    "test_mixed_snrs": [
+        12,
+        6,
+        0
+    ],
+    "noise_types": [
+        "BW",
+        "MA",
+        "EM"
+    ],
+    "powerline_frequencies": [
+        50,
+        60
+    ],
+    "noise_channel": 0,
+    "split_ranges": {
+        "train": [
+            0,
+            390000
+        ],
+        "validation": [
+            390000,
+            520000
+        ],
+        "test": [
+            520000,
+            650000
+        ]
+    }
+}

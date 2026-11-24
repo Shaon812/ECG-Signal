@@ -1,0 +1,2 @@
+Condition,N,Accuracy,Macro_Precision,Macro_Recall,Macro_F1,Weighted_F1,checkpoint_sha256,config_version
+clean,19530,0.5678955453149002,0.39652563433386473,0.4105758032129684,0.3541498765774724,0.6899878121415806,c9a23746518a2ec99daa8290a3ee8e2d20df6a66ac69eb4d23c2c1f7e99b9214,B3-canonical-v1

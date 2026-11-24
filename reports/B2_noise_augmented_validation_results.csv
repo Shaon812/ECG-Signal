@@ -1,0 +1,2 @@
+Model,Best_Epoch,Validation_Loss,Validation_Accuracy,Macro_F1,Weighted_F1
+B2_ResNet_Noise_Augmented,3,0.9274755716323853,0.6092677931387609,0.3496804120822582,0.7251347023701128

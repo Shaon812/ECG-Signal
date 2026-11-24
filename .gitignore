@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Local outputs
+*.log
+.DS_Store
+
+# Large data artifacts are intentionally kept locally (not tracked in git)
+data/raw/
+data/processed/*.npz

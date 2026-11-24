@@ -1,0 +1,17 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.terminal.activateEnvironment": true,
+  "jupyter.interactiveWindow.textEditor.executeSelection": true,
+  "notebook.output.textLineLimit": 200,
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true
+  },
+  "python.analysis.extraPaths": [
+    "${workspaceFolder}/src"
+  ],
+  "search.exclude": {
+    "data/raw/**": true,
+    "data/processed/*.npz": true
+  }
+}
